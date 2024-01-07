@@ -7,7 +7,28 @@
 {% endblock %}
 
 {% block content %}
-    <div class="vehicle__box">
+    <div class="filters">
+        <label for="order">Order by:</label>
+        <select id="order" name="order">
+            <option value="price_asc">Price (Low to High)</option>
+            <option value="price_desc">Price (High to Low)</option>
+        </select>
+        <label for="seats">Number of Seats:</label>
+        <select id="seats" name="seats">
+            <option value="any">Any</option>
+            <option value="2">2 Seats</option>
+            <option value="4">4 Seats</option>
+            <option value="5">5 Seats</option>
+            <option value="6">6 Seats</option>
+            <option value="7">7 Seats</option>
+            <option value="8">8 Seats</option>
+            <option value="9">9 Seats</option>
+        </select>
+        
+        <button id="filterBtn">Filter</button>
+    </div>
+
+    <div class="vehicle__box" id="vehicleBox">
         {% set vehicle = craft.entries.section('vehicles').all() %}
         {% for car in vehicle %}
             <a href="{{ car.url }}" class="vehicle">

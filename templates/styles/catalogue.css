@@ -10,6 +10,47 @@ h2 {
     margin-top: 0;
 }
 
+.filters {
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+#order, #seats {
+    margin-right: 30px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+select {
+    width: 200px;
+    height: 40px;
+    border-radius: 1rem;
+    border: 2px solid #ccc;
+    background-color: #FFF;
+    font-size: 1.2rem;
+    padding-left: 8px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 1rem;
+    border: 2px solid #ccc;
+    background-color: #03A049;
+    font-size: 1.2rem;
+    padding-left: 8px;
+    color: #FFF;
+}
+
+button:hover {
+    background-color: #03C04A;
+    color: #CCC;
+    cursor: pointer;
+}
+
 .vehicle__box {
     display: flex;
     flex-direction: row;
