@@ -10,6 +10,9 @@
 
 {% block content %}
     {# Content specific to the home page #}
-    {{ entry.text }}
-    <a href="./catalogue.twig" class="cta__btn">Check our vehicles!</a>
+    <img class="home__background" src="{{ entry.carImage.one().url }}" alt="{{ entry.carImage.one().title }}">
+    <div class="home__content">
+        {{ entry.text }}
+        <a href="./catalogue.twig" class="cta__btn">Check our vehicles!</a>
+    </div>
 {% endblock %}

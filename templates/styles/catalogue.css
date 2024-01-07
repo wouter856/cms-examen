@@ -53,6 +53,11 @@ h2 {
     border-radius: 1rem;
 }
 
+.vehicle__summary {
+    width: 100%;
+    text-align: center;
+}
+
 .data__value span {
     font-weight: bold;
 }

@@ -33,6 +33,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 7237bd34-fece-4929-bec1-720c95d92d41 # Car Image
+            instructions: 'add an image for the background of the homepage'
+            label: 'Background Image'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bba2c09e-de02-4272-9e8b-ce1d2538f7a1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 36fff91a-85e3-4ce4-90f5-8b88a212869b # text
             instructions: null
             label: null
