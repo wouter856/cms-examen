@@ -1,0 +1,22 @@
+dateModified: 1704629952
+email:
+  fromEmail: wouterwaumans@live.be
+  fromName: examen
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    83b913ff-6be0-4f25-8912-cc9b97eafcb3: examen # examen
+    e7a08bfc-9c8d-4a4f-acd0-5d93b84cba66: examen # examen
+    fcd5a423-1aec-4ea4-b9b7-5e1468798db4: Common # Common
+system:
+  edition: solo
+  live: true
+  name: examen
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
