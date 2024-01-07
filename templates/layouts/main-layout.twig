@@ -59,6 +59,20 @@
         footer p {
             margin: 0;
         }
+
+        @media (max-width: 1030px) {
+            .link__container {
+                margin-left: calc(15% - 10px);
+                width: 70%;
+            }
+        }
+
+         @media (max-width: 700px) {
+            .link__container {
+                margin-left: 10px;
+                width: 100%;
+            }
+        }
     </style>
     <link>{% block styles %}{% endblock %}</link>
 </head>

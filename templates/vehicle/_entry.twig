@@ -1,9 +1,16 @@
 <style>
-
+ img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+ }
 </style>
 
 <div class="vehicle">
     <h2>{{ entry.title }}</h2>
+    <div>
+        <img src="{{ entry.carImage.one().url }}" alt="{{ entry.carImage.one().title }}">
+    </div>
     <div>
         <div class="dataValue">{{ entry.dataValueDoors }}</div>
         <div class="dataValue">{{ entry.dataValueGears }}</div>

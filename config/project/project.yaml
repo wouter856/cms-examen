@@ -1,8 +1,16 @@
-dateModified: 1704642282
+dateModified: 1704650795
 email:
   fromEmail: wouterwaumans@live.be
   fromName: examen
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  carImages:
+    hasUrls: true
+    name: 'Car Images'
+    settings:
+      path: '@webroot/images'
+    type: craft\fs\Local
+    url: '@web/images'
 meta:
   __names__:
     5cfb29bb-4c0c-40f7-95f2-389dc86908a8: 'Data Value Gears' # Data Value Gears
@@ -11,9 +19,11 @@ meta:
     565a57a5-2f31-4663-9cb4-fab70e79adef: 'Price Per Day' # Price Per Day
     2588d4e0-146c-4f8c-8190-b16f059d1a8a: 'Summary Text' # Summary Text
     5282c153-2124-4e2f-8217-1866eb6e6611: Homepage # Homepage
+    7237bd34-fece-4929-bec1-720c95d92d41: 'Car Image' # Car Image
     66400832-0f0e-4523-aaa1-4bb0b4a662b9: Homepage # Homepage
     b5223d8f-0634-4917-9612-14a9bdac5d37: Vehicles # Vehicles
     e7a08bfc-9c8d-4a4f-acd0-5d93b84cba66: examen # examen
+    ebb9426d-656d-4461-9222-2013c82dcca6: 'Car Images' # Car Images
     ec351472-c895-48ae-93d5-b44c052b81e2: Default # Default
     f1b472a5-f8c0-4d17-b887-70c016844a10: 'Data Value Doors' # Data Value Doors
     fcd5a423-1aec-4ea4-b9b7-5e1468798db4: Common # Common

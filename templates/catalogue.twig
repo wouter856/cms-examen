@@ -5,10 +5,26 @@
 
 {% block styles %}
     {# Include additional stylesheet specific to home.twig #}
-    <link rel="stylesheet" href="{{ url('../catalogue/home.css') }}">
+    <link rel="stylesheet" href="{{ url('../styles/catalogue.css') }}">
 {% endblock %}
 
 {% block content %}
     {# Content specific to the home page #}
-    <h1>Catalogue</h1>
+    <h1>Select a vehicle you like below and start renting today</h1>
+    <div class="vehicle__box">
+        {% set vehicle = craft.entries.section('vehicles').all() %}
+        {% for car in vehicle %}
+            <a href="{{ car.url }}" class="vehicle">
+                <h2>{{ car.title }}</h2>
+                <img class="vehicle__image" src="{{ car.carImage.one().url }}" alt="{{ car.carImage.one().title }}">
+                <div class="data">
+                    <div class="data__value"><span>Doors: </span>{{ car.dataValueDoors }}</div>
+                    <div class="data__value"><span>Gears: </span>{{ car.dataValueGears }}</div>
+                    <div class="data__value"><span>Seats: </span>{{ car.dataValueSeats }}</div>
+                </div>
+                <div class="vehicle__summary">{{ car.summaryText }}</div>
+                <div class="rent__btn">Rent now</div>
+            </a>
+        {% endfor %}
+    </div>
 {% endblock %}

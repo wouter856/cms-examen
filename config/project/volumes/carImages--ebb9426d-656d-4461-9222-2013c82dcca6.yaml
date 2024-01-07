@@ -1,0 +1,44 @@
+fieldLayouts:
+  f832fcb5-c5db-4b47-8c32-f732a6f97fcd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: da7f48e0-507a-4cc8-84b1-efeac840ebc2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fc500b5e-1106-4c47-a0f9-0174c4316f7f
+        userCondition: null
+fs: carImages
+handle: carImages
+name: 'Car Images'
+sortOrder: 3
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

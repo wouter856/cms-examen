@@ -1,0 +1,87 @@
+body {
+    background-color: #F9F9F9;
+}
+
+h1 {
+    margin-left: 2%;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.vehicle__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vehicle {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 420px;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #ccc;
+    background-color: #FFF;
+    box-shadow: 2px 2px grey;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.vehicle__image {
+    width: 96%;
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.data__value span {
+    font-weight: bold;
+}
+
+.rent__btn {
+    margin-left: 10%;
+    width: 80%;
+    height: 40px;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #03C04A;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rent__btn:hover {
+    background-color: #03A049;
+}
+
+@media (max-width: 1030px) {
+    .vehicle__box {
+        justify-content: center;
+    }
+}

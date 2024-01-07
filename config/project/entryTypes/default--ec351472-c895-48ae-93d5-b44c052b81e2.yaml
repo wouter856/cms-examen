@@ -45,6 +45,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 7237bd34-fece-4929-bec1-720c95d92d41 # Car Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 679c379e-673e-4cf6-bf01-c6a21828bd96
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 565a57a5-2f31-4663-9cb4-fab70e79adef # Price Per Day
             instructions: 'the price per day for the vehicle in EUR'
             label: null
