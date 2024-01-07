@@ -1,0 +1,35 @@
+columnSuffix: uzbnnaru
+contentColumnType: string(9)
+fieldGroup: fd94f5d7-8f12-42b5-ad97-78bb9426820d # Global
+handle: dataValueGears
+instructions: null
+name: 'Data Value Gears'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Manual
+        -
+          - value
+          - manual
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Automatic
+        -
+          - value
+          - automatic
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

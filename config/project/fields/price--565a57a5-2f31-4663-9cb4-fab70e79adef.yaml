@@ -1,0 +1,17 @@
+columnSuffix: lohnrpiw
+contentColumnType: integer(5)
+fieldGroup: fd94f5d7-8f12-42b5-ad97-78bb9426820d # Global
+handle: price
+instructions: null
+name: 'Price Per Day'
+searchable: false
+settings:
+  currency: EUR
+  defaultValue: 0
+  max: 39900
+  min: 0
+  showCurrency: true
+  size: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Money

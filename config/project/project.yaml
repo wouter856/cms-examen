@@ -1,17 +1,24 @@
-dateModified: 1704633827
+dateModified: 1704642282
 email:
   fromEmail: wouterwaumans@live.be
   fromName: examen
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    5cfb29bb-4c0c-40f7-95f2-389dc86908a8: 'Data Value Gears' # Data Value Gears
     36fff91a-85e3-4ce4-90f5-8b88a212869b: text # text
     83b913ff-6be0-4f25-8912-cc9b97eafcb3: examen # examen
+    565a57a5-2f31-4663-9cb4-fab70e79adef: 'Price Per Day' # Price Per Day
+    2588d4e0-146c-4f8c-8190-b16f059d1a8a: 'Summary Text' # Summary Text
     5282c153-2124-4e2f-8217-1866eb6e6611: Homepage # Homepage
     66400832-0f0e-4523-aaa1-4bb0b4a662b9: Homepage # Homepage
+    b5223d8f-0634-4917-9612-14a9bdac5d37: Vehicles # Vehicles
     e7a08bfc-9c8d-4a4f-acd0-5d93b84cba66: examen # examen
+    ec351472-c895-48ae-93d5-b44c052b81e2: Default # Default
+    f1b472a5-f8c0-4d17-b887-70c016844a10: 'Data Value Doors' # Data Value Doors
     fcd5a423-1aec-4ea4-b9b7-5e1468798db4: Common # Common
     fd94f5d7-8f12-42b5-ad97-78bb9426820d: Global # Global
+    fe4e8cef-1812-4eca-bca5-91613ef11a4f: 'Data Value Seats' # Data Value Seats
 plugins:
   redactor:
     edition: standard

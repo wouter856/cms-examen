@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: vehicles
+name: Vehicles
+propagationMethod: all
+siteSettings:
+  e7a08bfc-9c8d-4a4f-acd0-5d93b84cba66: # examen
+    enabledByDefault: true
+    hasUrls: true
+    template: vehicle/_entry
+    uriFormat: 'vehicle/{slug}'
+type: channel

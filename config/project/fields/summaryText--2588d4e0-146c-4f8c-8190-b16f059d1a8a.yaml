@@ -1,0 +1,19 @@
+columnSuffix: bkvfgqfs
+contentColumnType: text
+fieldGroup: fd94f5d7-8f12-42b5-ad97-78bb9426820d # Global
+handle: summaryText
+instructions: null
+name: 'Summary Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
