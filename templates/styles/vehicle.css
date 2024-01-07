@@ -1,0 +1,43 @@
+img {
+    width: 100%;
+    height: calc(80vh - 34px);
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.car__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.price__value {
+    color: #03C04A;
+    font-size: 2.4rem;
+}
+
+.price__period {
+    position: relative;
+    left: -8px;
+    top: 8px;
+}
+
+.data__value {
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.data__value span {
+    font-weight: bold;
+}

@@ -1,22 +1,23 @@
-{# templates/home.twig #}
 {% extends 'layouts/main-layout.twig' %}
 
 {% block title %}Catalogue - Waumans Vehicles{% endblock %}
 
 {% block styles %}
-    {# Include additional stylesheet specific to home.twig #}
     <link rel="stylesheet" href="{{ url('../styles/catalogue.css') }}">
 {% endblock %}
 
 {% block content %}
-    {# Content specific to the home page #}
-    <h1>Select a vehicle you like below and start renting today</h1>
     <div class="vehicle__box">
         {% set vehicle = craft.entries.section('vehicles').all() %}
         {% for car in vehicle %}
             <a href="{{ car.url }}" class="vehicle">
                 <h2>{{ car.title }}</h2>
                 <img class="vehicle__image" src="{{ car.carImage.one().url }}" alt="{{ car.carImage.one().title }}">
+                {% set price = car.pricePerDay|money %}
+                <div class="price">
+                    <span class="price__value">{{ price|currency('EUR') }}</span>
+                    <span class="price__period">/day</span>
+                </div>
                 <div class="data">
                     <div class="data__value"><span>Doors: </span>{{ car.dataValueDoors }}</div>
                     <div class="data__value"><span>Gears: </span>{{ car.dataValueGears }}</div>

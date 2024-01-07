@@ -47,15 +47,32 @@ h2 {
 .vehicle__image {
     width: 96%;
     height: 240px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
     border-radius: 1rem;
 }
 
 .vehicle__summary {
     width: 100%;
     text-align: center;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+.price__value {
+    color: #03C04A;
+    font-size: 2.4rem;
+}
+
+.price__period {
+    position: relative;
+    left: -8px;
+    top: 8px;
 }
 
 .data__value span {

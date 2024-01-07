@@ -1,20 +1,31 @@
-<style>
- img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
- }
-</style>
+{% extends 'layouts/main-layout.twig' %}
 
-<div class="vehicle">
-    <h2>{{ entry.title }}</h2>
-    <div>
-        <img src="{{ entry.carImage.one().url }}" alt="{{ entry.carImage.one().title }}">
+{% block title %}Renting - Waumans Vehicles{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url('../styles/vehicle.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="vehicle">
+        <div class="car__content">
+            <div>
+                <img src="{{ entry.carImage.one().url }}" alt="{{ entry.carImage.one().title }}">
+            </div>
+            <div>
+                <h1>{{ entry.title }}</h1>
+                {% set price = entry.pricePerDay|money %}
+                <div class="price">
+                    <span class="price__value">{{ price|currency('EUR') }}</span>
+                    <span class="price__period">/day</span>
+                </div>
+                <div>
+                    <div class="data__value"><span>Doors: </span>{{ entry.dataValueDoors }}</div>
+                    <div class="data__value"><span>Gears: </span>{{ entry.dataValueGears }}</div>
+                    <div class="data__value"><span>Seats: </span>{{ entry.dataValueSeats }}</div>
+                </div>
+                {{ entry.text }}
+            </div>
+        </div>
     </div>
-    <div>
-        <div class="dataValue">{{ entry.dataValueDoors }}</div>
-        <div class="dataValue">{{ entry.dataValueGears }}</div>
-        <div class="dataValue">{{ entry.dataValueSeats }}</div>
-    </div>
-    {{ entry.text }}
-</div>
+{% endblock %}
