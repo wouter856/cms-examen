@@ -1,15 +1,14 @@
 {# templates/home.twig #}
 {% extends 'layouts/main-layout.twig' %}
 
-{% block title %}Home - Waumans Vehicles{% endblock %}
+{% block title %}Vehicle - Waumans Vehicles{% endblock %}
 
 {% block styles %}
     {# Include additional stylesheet specific to home.twig #}
-    <link rel="stylesheet" href="{{ url('../styles/home.css') }}">
+    <link rel="stylesheet" href="{{ url('../styles/vehicle.css') }}">
 {% endblock %}
 
 {% block content %}
     {# Content specific to the home page #}
-    {{ entry.text }}
-    <a href="./catalogue.twig" class="cta__btn">Check our vehicles!</a>
+    <h1>Vehicle</h1>
 {% endblock %}

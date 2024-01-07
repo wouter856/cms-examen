@@ -1,0 +1,27 @@
+columnSuffix: vidwnuqz
+contentColumnType: text
+fieldGroup: fd94f5d7-8f12-42b5-ad97-78bb9426820d # Global
+handle: text
+instructions: null
+name: text
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

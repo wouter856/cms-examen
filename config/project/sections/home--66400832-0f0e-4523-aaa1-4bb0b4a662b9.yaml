@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Homepage
+propagationMethod: all
+siteSettings:
+  e7a08bfc-9c8d-4a4f-acd0-5d93b84cba66: # examen
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single
