@@ -5,39 +5,38 @@ use craft\helpers\UrlHelper;
 
 return [
     'endpoints' => [
-        '/api/cars' => function() {
+        '/api/vehicles' => function() {
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['section' => 'news'],
+                'criteria' => ['section' => 'vehicles'],
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function(Entry $entry) {
                     return [
-                        'id' => $entry->id,
-                        'title' => $entry->title,
-                        'intro' => $entry->introText,
-                        'bannerImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('banner')),
-                        'thumbImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('thumbnail')),
+                        'name' => $entry->title,
+                        'summary' => $entry->summaryText,
+                        'image' => str_replace("https", "http", $entry->carImage->one()->getUrl('banner')),
+                        'text' => $entry->text,
                     ];
                 },
             ];
         },
-        '/api/cars/<carName:{slug}>' => function($carName) {
+        '/api/vehicles/<carName:{slug}>' => function($carName) {
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['id' => $carName],
+                'criteria' => ['slug' => $carName],
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'one' => true,
                 'transformer' => function(Entry $entry) {
                     return [
-                      'id' => $entry->id,
-                      'title' => $entry->title,
-                      'fullText' => $entry->fullText,
-                      'headerImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('header'))
+                        'name' => $entry->title,
+                        'fullText' => $entry->text,
+                        'image' => str_replace("https", "http", $entry->carImage->one()->getUrl('banner')),
+                        'text' => $entry->text,
                     ];
                 },
             ];
         },
-    ]
+    ],
 ];
