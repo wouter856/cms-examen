@@ -41,3 +41,16 @@ h1 {
 .data__value span {
     font-weight: bold;
 }
+
+@media (max-width: 980px) {
+    .car__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .car__image {
+        width: 100%;
+        height: 60%;
+        object-fit: 100%;
+    }
+}
